@@ -1,0 +1,24 @@
+@import "/wxParse/wxParse.wxss";
+@import "/common/zhihu.wxss";
+
+.art-header {
+  background-color: #f6f6f6;
+}
+
+.art-header image {
+  display: block;
+  margin: 30rpx auto 10rpx;
+}
+
+.art-title {
+  font-size: 28rpx;
+  padding: 20rpx 50rpx;
+}
+
+.headline {
+  height: 0;
+}
+
+.wxParse-script {
+  height: 0;
+}

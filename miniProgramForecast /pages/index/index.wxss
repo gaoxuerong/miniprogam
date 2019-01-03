@@ -1,0 +1,39 @@
+.search {
+  width: 100%;
+  height: 100rpx;
+  background-color: #68abbc;
+  position: relative;
+  padding: 15rpx 0;
+  box-sizing: border-box;
+}
+
+.search input {
+  display: block;
+  width: 90%;
+  height: 70rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin: auto;
+  text-align: center;
+}
+
+.results {
+  font-size: 30rpx;
+  padding: 20rpx;
+  width: 100%;
+}
+
+.future,.today{
+  padding: 10rpx;
+}
+
+.future-title {
+  display: block;
+}
+
+.future-temperature, .future-weather, .future-week, .future-wind {
+  margin-right: 20rpx;
+}
+.today-city,.today-time,.today-weather,.today-temperature,.today-week,.humidity,.today-wind,.today-uv-index, .today-travel-index,.today-exercise-index,.today-dressing-advice{
+  margin-right: 20rpx;
+}

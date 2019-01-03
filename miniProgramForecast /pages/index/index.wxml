@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <input placeholder="输入要查询的城市" name="cityid" bindblur="getCityId"></input>
+  </view>
+  <view class="results">
+    <view class="today">
+      <text class="today-city">城市：{{today.city}}</text>
+      <text class="today-week">星期：{{today.week}}</text>
+      <text class="today-weather">天气：{{today.weather}}</text>
+    </view>
+    <view class="today">
+      <text class="today-wind">风力：{{today.wind}}</text>
+      <text class="today-temperature">温度：{{today.temperature}}</text>
+      <text class="humidity">湿度：{{sk.humidity}}</text>
+    </view>
+    <view class="today">
+      <text class="today-exercise-index"> 运动：{{today.exercise_index}}</text>
+      <text class="today-uv-index">紫外线：{{today.uv_index}}</text>
+      <text class="today-travel-index"> 旅游：{{today.travel_index}}</text>
+    </view>
+    <view class="today">
+      <text class="today-dressing-advice"> 穿衣建议：{{today.dressing_advice}}</text>
+    </view>
+    <text class="future-title">未来一周天气预报：</text>
+    <view class="future" wx:for="{{future}}" wx:for-item="futureDay" wx:key="futureDay.week">
+      <text class="future-temperature">{{futureDay.temperature}}</text>
+      <text class="future-weather">{{futureDay.weather}}</text>
+      <text class="future-week">{{futureDay.week}}</text>
+      <text class="future-wind">{{futureDay.wind}}</text>
+    </view>
+  </view>
+</view>
